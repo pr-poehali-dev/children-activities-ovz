@@ -128,9 +128,18 @@ const Index = () => {
                 {filteredLessons.map((lesson) => (
                   <Card
                     key={lesson.id}
-                    className="hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer border-2"
+                    className="hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer border-2 overflow-hidden"
                     onClick={() => setSelectedLesson(lesson)}
                   >
+                    {lesson.image && (
+                      <div className="w-full h-48 overflow-hidden bg-gradient-to-br from-purple-50 to-pink-50">
+                        <img 
+                          src={lesson.image} 
+                          alt={lesson.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
                     <CardHeader className="pb-3">
                       <div className="flex items-start justify-between mb-2">
                         <Badge variant="secondary" className="text-sm">
@@ -163,6 +172,15 @@ const Index = () => {
           <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
             {selectedLesson && (
               <>
+                {selectedLesson.image && (
+                  <div className="w-full h-64 -mt-6 -mx-6 mb-4 overflow-hidden bg-gradient-to-br from-purple-50 to-pink-50">
+                    <img 
+                      src={selectedLesson.image} 
+                      alt={selectedLesson.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
                 <DialogHeader>
                   <div className="flex items-center gap-3 mb-2">
                     <Icon name={getCategoryIcon(selectedLesson.category)} size={32} className="text-purple-500" />
@@ -262,6 +280,32 @@ const Index = () => {
                         </li>
                       ))}
                     </ul>
+                  </div>
+
+                  <div className="flex gap-3 pt-4 border-t">
+                    <Button 
+                      onClick={() => window.print()} 
+                      className="flex-1 gap-2"
+                      variant="outline"
+                    >
+                      <Icon name="Printer" size={18} />
+                      Распечатать занятие
+                    </Button>
+                    {selectedLesson.image && (
+                      <Button 
+                        onClick={() => {
+                          const link = document.createElement('a');
+                          link.href = selectedLesson.image;
+                          link.download = `${selectedLesson.title}.jpg`;
+                          link.click();
+                        }}
+                        className="flex-1 gap-2"
+                        variant="outline"
+                      >
+                        <Icon name="Download" size={18} />
+                        Скачать материал
+                      </Button>
+                    )}
                   </div>
                 </div>
               </>

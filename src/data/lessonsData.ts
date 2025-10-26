@@ -7,6 +7,7 @@ export const lessonsData = [
     title: 'Знакомство с эмоциями: Радость',
     category: 'Эмоции',
     duration: 20,
+    image: 'https://cdn.poehali.dev/projects/e5d0284d-3fc8-401e-934f-a10427195547/files/89e731fe-97e9-411a-ba65-859542f19c28.jpg',
     description: 'Первое знакомство с базовой эмоцией радости через игру и визуальные образы',
     goal: 'Познакомить детей с понятием "радость", научить распознавать радостное настроение у себя и других',
     materials: [
@@ -81,6 +82,7 @@ export const lessonsData = [
     title: 'Учимся здороваться',
     category: 'Коммуникация',
     duration: 20,
+    image: 'https://cdn.poehali.dev/projects/e5d0284d-3fc8-401e-934f-a10427195547/files/89e731fe-97e9-411a-ba65-859542f19c28.jpg',
     description: 'Формирование навыка приветствия через игры и повторение',
     goal: 'Научить детей здороваться разными способами: словом, жестом, взглядом',
     materials: [
@@ -153,6 +155,7 @@ export const lessonsData = [
     title: 'Большие и маленькие предметы',
     category: 'Познание',
     duration: 20,
+    image: 'https://cdn.poehali.dev/projects/e5d0284d-3fc8-401e-934f-a10427195547/files/2b4ae530-fd92-475a-93ee-26dc85c1f675.jpg',
     description: 'Знакомство с понятиями размера через сенсорные игры',
     goal: 'Научить различать большие и маленькие предметы, развить тактильное восприятие',
     materials: [
@@ -225,6 +228,7 @@ export const lessonsData = [
     title: 'Рисуем пальчиками: Солнышко',
     category: 'Творчество',
     duration: 25,
+    image: 'https://cdn.poehali.dev/projects/e5d0284d-3fc8-401e-934f-a10427195547/files/fcf4dd17-53bd-435d-aec0-37a3ea0be7c4.jpg',
     description: 'Развитие мелкой моторики и творческих способностей через пальчиковое рисование',
     goal: 'Познакомить с техникой пальчикового рисования, создать позитивный опыт творчества',
     materials: [
@@ -302,6 +306,7 @@ export const lessonsData = [
     title: 'Эмоции: Грусть и радость',
     category: 'Эмоции',
     duration: 25,
+    image: 'https://cdn.poehali.dev/projects/e5d0284d-3fc8-401e-934f-a10427195547/files/f04b635d-505c-46ab-b205-29eaf77b0761.jpg',
     description: 'Различение двух базовых эмоций и их выражение',
     goal: 'Научить детей различать радость и грусть, выражать свои чувства',
     materials: [
@@ -462,6 +467,7 @@ export const lessonsData = [
     title: 'Цвета: Красный и синий',
     category: 'Познание',
     duration: 25,
+    image: 'https://cdn.poehali.dev/projects/e5d0284d-3fc8-401e-934f-a10427195547/files/2b4ae530-fd92-475a-93ee-26dc85c1f675.jpg',
     description: 'Различение и называние основных цветов',
     goal: 'Научить различать красный и синий цвета, находить предметы этих цветов',
     materials: [
@@ -614,6 +620,7 @@ export const lessonsData = [
     title: 'Мои чувства: радость, грусть, злость',
     category: 'Эмоции',
     duration: 30,
+    image: 'https://cdn.poehali.dev/projects/e5d0284d-3fc8-401e-934f-a10427195547/files/a323addb-165d-4b81-bf3e-6b2ce9b83fba.jpg',
     description: 'Расширение эмоционального словаря, работа с тремя эмоциями',
     goal: 'Научить различать и называть три базовые эмоции, связывать их с ситуациями',
     materials: [
@@ -777,6 +784,7 @@ export const lessonsData = [
     title: 'Формы: круг, квадрат, треугольник',
     category: 'Познание',
     duration: 30,
+    image: 'https://cdn.poehali.dev/projects/e5d0284d-3fc8-401e-934f-a10427195547/files/2b4ae530-fd92-475a-93ee-26dc85c1f675.jpg',
     description: 'Изучение основных геометрических форм',
     goal: 'Научить различать и называть три основные формы, находить их в окружении',
     materials: [
@@ -939,6 +947,7 @@ export const lessonsData = [
     title: 'Словарь эмоций: страх и удивление',
     category: 'Эмоции',
     duration: 35,
+    image: 'https://cdn.poehali.dev/projects/e5d0284d-3fc8-401e-934f-a10427195547/files/a323addb-165d-4b81-bf3e-6b2ce9b83fba.jpg',
     description: 'Расширение эмоционального словаря, работа с новыми эмоциями',
     goal: 'Познакомить с эмоциями страха и удивления, обсудить способы справляться со страхом',
     materials: [
@@ -1105,6 +1114,7 @@ export const lessonsData = [
     title: 'Счёт до 5',
     category: 'Познание',
     duration: 35,
+    image: 'https://cdn.poehali.dev/projects/e5d0284d-3fc8-401e-934f-a10427195547/files/90593b92-0227-4111-8fc4-804f161e9c48.jpg',
     description: 'Формирование навыков счёта в пределах 5',
     goal: 'Научить детей считать до 5, соотносить количество с цифрой',
     materials: [
