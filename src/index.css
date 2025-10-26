@@ -1,38 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 96 100% 98%;
+    --foreground: 240 10% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 240 10% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 240 10% 20%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 260 60% 65%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 45 100% 90%;
+    --secondary-foreground: 240 10% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 200 20% 96%;
+    --muted-foreground: 240 5% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 330 100% 95%;
+    --accent-foreground: 240 10% 20%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 260 60% 65%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    --soft-green: 96 100% 95%;
+    --soft-yellow: 45 100% 90%;
+    --soft-purple: 260 100% 95%;
+    --soft-pink: 330 100% 95%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -97,5 +104,41 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Open Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-base-accessible {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .text-lg-accessible {
+    font-size: 1.25rem;
+    line-height: 1.75;
+  }
+
+  .text-xl-accessible {
+    font-size: 1.5rem;
+    line-height: 1.75;
+  }
+
+  .high-contrast {
+    filter: contrast(1.5);
+  }
+
+  .reduced-motion {
+    animation: none !important;
+    transition: none !important;
   }
 }
